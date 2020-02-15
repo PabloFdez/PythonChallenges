@@ -1,0 +1,26 @@
+"""
+Beginner Python exercises:
+https://www.practicepython.org/
+
+Element Search
+https://www.practicepython.org/exercise/2014/11/11/20-element-search.html
+
+Write a function that takes an ordered list of numbers (a list where the elements are in order from smallest to largest)
+and another number. The function decides whether or not the given number is inside the list and returns (then prints)
+an appropriate boolean.
+
+Extras:
+
+ - Use binary search.
+
+"""
+import random
+
+lista = [random.randrange(0,10) for i in range(10)]
+print("Lista de busqueda:")
+print(lista)
+num = int(input( "Introduzca un numero: "))
+if num in lista:
+    print("TRUE")
+else:
+    print("FALSE")
